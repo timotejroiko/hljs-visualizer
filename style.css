@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+	background: #333;
+}
+
+#floating {
+	padding: 20px 10px 5px 10px;
+    background: #aaa;
+	margin: 0 100%;
+}
+
+.unpinned #floating {
+	position: fixed;
+	z-index: 1;
+	margin: 0;
+}
+
+#top {
+	display: flex;
+	margin: 0 -3px;
+}
+
+#pin, #bgcolor, #boxbgcolor, #style {
+	height: 40px;
+	width: 40px;
+	border: 2px solid black;
+    box-sizing: border-box;
+    margin: 0 3px 5px 3px;
+	cursor: pointer;
+}
+
+#pin {
+    text-align: center;
+    font-size: 25px;
+}
+
+.unpinned #pin {
+	opacity: 0.2;
+}
+
+#bgcolor {
+	background: #333;
+}
+
+#style {
+	flex-grow: 1;
+}
+
+#input {
+	min-width: 350px;
+    min-height: 200px;
+	max-width: calc(90vw - 20px);
+	padding: 10px;
+    background: rgb(250, 250, 250);
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px -10px;
+}
+
+#input:active {
+	outline: none;
+}
+
+pre.hljs {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    min-width: 300px;
+    min-height: 100px;
+	box-shadow: 0 0 20px -10px black;
+	position: relative;
+	cursor: text;
+}
+
+pre.hljs:after {
+    content: attr(lang);
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #888;
+	opacity: 0.8;
+}
+
+pre.hljs lang {
+	display: block;
+    font-size: 14px;
+    letter-spacing: -1px;
+	color: #888;
+	opacity: 0.8;
+	margin-bottom: 5px;
+}
+
+pre.hljs lang span {
+	font-size: 11px;
+}

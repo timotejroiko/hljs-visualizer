@@ -1,4 +1,6 @@
 # hljs-visualizer
-Highlight.js live previewing
+A small webpage to live-preview Highlight.js syntax highlighting for all languages and styles.
 
-https://highlightjs--timotejroiko.repl.co/
+Live version hosted at repl.it: https://highlightjs--timotejroiko.repl.co/
+
+PRs for feature requests, updates and/or adding custom styles are welcome
